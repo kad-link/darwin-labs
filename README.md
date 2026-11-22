@@ -62,3 +62,11 @@ npm install
 npm run dev
 ```
 Open `http://localhost:5173` in your browser.
+
+## Testing
+
+Engine logic is covered by unit tests using Node's built-in test runner:
+
+    npm test
+
+Tests include the Goldberg (1989) textbook population (fitness 169, 576, 64, 361) for elitism, CSV export of run history, and convergence metrics. The same tests run automatically on every push through GitHub Actions.
